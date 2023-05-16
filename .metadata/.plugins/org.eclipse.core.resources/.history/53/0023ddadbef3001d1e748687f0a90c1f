@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import java.util.Map.Entry;
 
 public class Manager {
 	public static void main(String[] args) {
@@ -13,7 +13,6 @@ public class Manager {
 		Iphone iphonNum3 = new Iphone();
 		iphonNum1.makeCall("0123456789");
 		iphonNum1.recieveCall("987654321");
-		iphonNum1.slideToUnlock();
 		System.out.println(iphonNum1.playSong("Hello Song"));
 		System.out.println(iphonNum1.playVideo("Hello Video"));
 		System.out.println(iphonNum1.getLocation());
@@ -31,7 +30,7 @@ public class Manager {
 		iphoneHashMap.put("0895374248", iphonNum3);
 		System.out.println("IPhone HashMap ");  
 		for(Map.Entry<String, Iphone>  i  :iphoneHashMap.entrySet()) {
-			System.out.println("Key : " + i.getKey() +" value : " + i.getValue());  
+			System.out.println("Key :" + i.getKey() +" value : " + i.getValue());  
 		}
 	}
 }
